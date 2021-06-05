@@ -13,6 +13,7 @@
 		E068B828266B0F5A00F71E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E068B826266B0F5A00F71E4C /* Main.storyboard */; };
 		E068B82A266B0F5B00F71E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E068B829266B0F5B00F71E4C /* Assets.xcassets */; };
 		E068B82D266B0F5B00F71E4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E068B82B266B0F5B00F71E4C /* LaunchScreen.storyboard */; };
+		E068B836266B1B1400F71E4C /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068B835266B1B1400F71E4C /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E068B829266B0F5B00F71E4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E068B82C266B0F5B00F71E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E068B82E266B0F5B00F71E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E068B835266B1B1400F71E4C /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E068B820266B0F5A00F71E4C /* AppDelegate.swift */,
 				E068B822266B0F5A00F71E4C /* SceneDelegate.swift */,
 				E068B824266B0F5A00F71E4C /* ViewController.swift */,
+				E068B835266B1B1400F71E4C /* ListTableViewCell.swift */,
 				E068B826266B0F5A00F71E4C /* Main.storyboard */,
 				E068B829266B0F5B00F71E4C /* Assets.xcassets */,
 				E068B82B266B0F5B00F71E4C /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E068B825266B0F5A00F71E4C /* ViewController.swift in Sources */,
+				E068B836266B1B1400F71E4C /* ListTableViewCell.swift in Sources */,
 				E068B821266B0F5A00F71E4C /* AppDelegate.swift in Sources */,
 				E068B823266B0F5A00F71E4C /* SceneDelegate.swift in Sources */,
 			);
