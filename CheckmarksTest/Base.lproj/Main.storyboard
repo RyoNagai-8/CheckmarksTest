@@ -32,6 +32,9 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="square" catalog="system"/>
                                                     <state key="selected" image="checkmark.square" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="checkToggled:" destination="SGn-7q-9JO" eventType="touchUpInside" id="dBS-sf-Znb"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
