@@ -11,8 +11,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var testTableView: UITableView!
     
-    var toDoItems : [ToDoItem] = []
-    
     var toDoItem: ToDoItem!
     
     override func viewDidLoad() {
@@ -38,11 +36,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource, ListTableV
     func checkBoxToggle(sender: ListTableViewCell) {
         if let selectedIndexPath = testTableView.indexPath(for: sender){
             
-            print("push\(selectedIndexPath.row)")
+            if toDoItem.completed == false {
+                toDoItem.completed = true
+                print("push\(selectedIndexPath.row):true")
+            } else {
+                toDoItem.completed = false
+                print("push\(selectedIndexPath.row):false")
+            }
             
-            toDoItem.completed = true
-            
-//            toDoItems[selectedIndexPath.row].completed = !toDoItems[selectedIndexPath.row].completed
            testTableView.reloadRows(at: [selectedIndexPath], with: .automatic)
 
         }
@@ -50,7 +51,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource, ListTableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
