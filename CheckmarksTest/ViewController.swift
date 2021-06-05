@@ -22,6 +22,8 @@ class ViewController: UIViewController {
             toDoItem = ToDoItem(completed: false)
         }
         
+        print("デバック：\(String(describing: toDoItem))")
+        
         testTableView.delegate = self
         testTableView.dataSource = self
         
@@ -37,6 +39,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource, ListTableV
         if let selectedIndexPath = testTableView.indexPath(for: sender){
             
             print("push\(selectedIndexPath.row)")
+            
+            toDoItem.completed = true
             
 //            toDoItems[selectedIndexPath.row].completed = !toDoItems[selectedIndexPath.row].completed
            testTableView.reloadRows(at: [selectedIndexPath], with: .automatic)
@@ -54,7 +58,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource, ListTableV
         
         cell.delegate = self
         
-        cell.checkBoxButton.isSelected = false
+        cell.checkBoxButton.isSelected = toDoItem.completed
         
         cell.backgroundColor = .green
         
