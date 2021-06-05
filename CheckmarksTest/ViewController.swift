@@ -30,7 +30,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = testTableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+        let cell = testTableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! ListTableViewCell
+        
+        cell.checkBoxButton.isSelected = false
         
         cell.backgroundColor = .green
         
