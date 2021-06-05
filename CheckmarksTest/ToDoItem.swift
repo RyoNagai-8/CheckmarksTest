@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct ToDoItem: Codable {
+    var completed: Bool
+}

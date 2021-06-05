@@ -11,12 +11,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var testTableView: UITableView!
     
+    var toDoItems : [ToDoItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         testTableView.delegate = self
         testTableView.dataSource = self
-        
         
         
     }
